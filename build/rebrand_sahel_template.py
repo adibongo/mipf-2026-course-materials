@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Rebrand the CIBN Sahel Sun capital-stack template for MIPF Day 1 (formulas untouched)."""
+"""Rebrand the Sahel Sun capital-stack template for MIPF Day 1 (formulas untouched)."""
 import sys, openpyxl
 from openpyxl.drawing.image import Image
 from openpyxl.styles import Font, PatternFill, Alignment
@@ -19,9 +19,9 @@ ws["A7"] = "Facilitator: Prof. Bongo Adi, Lagos Business School, Pan-Atlantic Un
 ws["A8"] = None
 # contact block under the existing text (last text row after the shift is 20)
 last = ws.max_row + 2
-ws.cell(last, 1, "Mastering Infrastructure and Project Finance (MIPF) Boot Camp  |  Lagos Business School  |  14 to 21 October 2026").font = Font(bold=True, color=NAVY)
+ws.cell(last, 1, "Mastering Infrastructure and Project Finance (MIPF) Boot Camp  |  Lagos Business School  |  14 to 22 October 2026").font = Font(bold=True, color=NAVY)
 ws.cell(last + 1, 1, CONTACT).font = Font(color=TEAL)
-ws.cell(last + 2, 1, "Adapted from the CIBN Centre for Financial Studies workshop (facilitator: Prof. Bongo Adi). Teaching case; all figures illustrative.").font = Font(italic=True, color="5C6B7A")
+ws.cell(last + 2, 1, "Teaching case; all figures illustrative.").font = Font(italic=True, color="5C6B7A")
 for s in wb:
     s.sheet_properties.tabColor = {"Read Me": GOLD, "Inputs": TEAL}.get(s.title, NAVY)
     s.oddHeader.left.text = "MIPF Boot Camp  |  Lagos Business School"

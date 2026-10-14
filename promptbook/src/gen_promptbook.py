@@ -177,7 +177,7 @@ subtitle: "Everything that builds the TrainStat financial model: prompts, specif
 author: "Prof Bongo Adi, Lagos Business School"
 date: last-modified
 date-format: "D MMMM YYYY"
-description: "Mastering Infrastructure and Project Finance Boot Camp, 14 to 21 October 2026. Reproduces the complete corrected model (start model and project-finance extension) with copy-ready prompts for five build paths (plus a reading path for lenders and lawyers), independent verification and the options that change the answer."
+description: "Mastering Infrastructure and Project Finance Boot Camp, 14 to 22 October 2026. Reproduces the complete corrected model (start model and project-finance extension) with copy-ready prompts for five build paths (plus a reading path for lenders and lawyers), independent verification and the options that change the answer."
 format:
   html:
     from: markdown-tex_math_dollars

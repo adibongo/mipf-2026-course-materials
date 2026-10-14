@@ -280,7 +280,7 @@ def add_cover_dashboard(wb, kind, changes, scen_note):
     for r in range(1, 6):
         for c in range(1, 9): cv.cell(r, c).fill = navy
     cv["B2"].value = title; cv["B2"].font = Font(name="Georgia", size=22, bold=True, color="FFFFFF")
-    cv["B3"].value = "Mastering Infrastructure and Project Finance Boot Camp  |  Lagos Business School  |  14 to 21 October 2026"; cv["B3"].font = Font(name="Calibri", size=12, color="F0C06A")
+    cv["B3"].value = "Mastering Infrastructure and Project Finance Boot Camp  |  Lagos Business School  |  14 to 22 October 2026"; cv["B3"].font = Font(name="Calibri", size=12, color="F0C06A")
     cv["B4"].value = "bongo.ai  |  MIPF  |  Prof Bongo Adi  |  +234 706 164 8699  |  badi@lbs.edu.ng  |  bongo.adi@fulbrightmail.org"; cv["B4"].font = Font(name="Calibri", size=11, color="C9D3F5")
     for f, anchor, h in (("lbs-logo.png", "H1", 52), ("mipf_hex_256.png", "F1", 58), ("bongo_ai_hex_256.png", "G1", 58)):
         im = XLImage(LOGO + f); ratio = im.width / im.height; im.height = h; im.width = int(h * ratio); cv.add_image(im, anchor)

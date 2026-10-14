@@ -1,6 +1,6 @@
 # MIPF October 2026: course materials
 
-Mastering Infrastructure and Project Finance Boot Camp, Lagos Business School, Pan-Atlantic University, 14 to 21 October 2026 (Sunday 18th is a rest day). Open enrolment.
+Mastering Infrastructure and Project Finance Boot Camp, Lagos Business School, Pan-Atlantic University, 14 to 22 October 2026 (Saturday 17th and Sunday 18th are rest days). Open enrolment.
 
 Course director: **Prof Bongo Adi** · +234 706 164 8699 · badi@lbs.edu.ng · bongo.adi@fulbrightmail.org
 
@@ -14,14 +14,14 @@ This repository is the public home of the participants' course materials. The re
 |---|---|---|
 | `syllabus/MIPF_October_2026_Course_Syllabus.docx` | Course syllabus in the 2024/2025 format, merged with the 2026 curriculum | Participants |
 | `website/` | Static participant website (open `index.html`): timetable, day pages, readings, model guide, faculty, practical information | Participants |
-| `decks/` | Eight **participants' edition** tutorial decks (543 slides): Excel foundations, Day 1 companion, Days 2 to 7. Exercises are intact; answer callouts, answer slides, answer keys and speaker notes are withheld and reviewed in class. The 101-slide Day 1 deck (adapted from the CIBN workshop) is in `website/materials/`, also without speaker notes. | Participants |
+| `decks/` | Eight **participants' edition** tutorial decks (543 slides): Excel foundations, Day 1 companion, Days 2 to 7. Exercises are intact; answer callouts, answer slides, answer keys and speaker notes are withheld and reviewed in class. The 101-slide Day 1 deck is in `website/materials/`, also without speaker notes. | Participants |
 | `models/` | Excel models: the corrected start model (Days 4 to 5), the complete project finance model (Days 6 to 7), and the original supplied file | Facilitators; start model also on the website |
 | `promptbook/` | **Model Prompt Book** (QMD and rendered HTML): everything that builds the model, with prompts for five build paths, checkpoints, options and failure modes; and the **MIPF Model Builder** (interactive HTML app). See `promptbook/README.md` | Everyone |
 | `build/` | Python scripts that generate the syllabus, website and decks from one content file (`mipf_data.py`) and the models | Maintainers |
 
-## Day 1 (CIBN-derived) materials
+## Day 1 materials
 
-The Day 1 deck, participant workbook, pre-read primer and the Sahel Sun capital-stack template were adapted from the CIBN workshop and are rebranded for MIPF: CIBN references replaced, LBS logo, MIPF hex and bongo.ai hex added, contact block in every file, speaker notes removed from the deck. The template's formulas are unchanged; results were checked in Microsoft Excel (debt 37.40, minimum DSCR 1.35x, LLCR 1.35x, sponsor IRR 10.25%). The adaptation scripts are `src/rebrand_sahel_template.py` and `src/rebrand_day1_docs.py`.
+The Day 1 deck, participant workbook, pre-read primer and the Sahel Sun capital-stack template are branded for MIPF: LBS logo, MIPF hex and bongo.ai hex added, contact block in every file, speaker notes removed from the deck. The template's formulas are unchanged; results were checked in Microsoft Excel (debt 37.40, minimum DSCR 1.35x, LLCR 1.35x, sponsor IRR 10.25%). 
 
 ## Models
 

@@ -1,6 +1,6 @@
 # MIPF Model Prompt Book
 
-Everything that builds the TrainStat financial model for the **Mastering Infrastructure and Project Finance Boot Camp**, Lagos Business School, 14 to 21 October 2026.
+Everything that builds the TrainStat financial model for the **Mastering Infrastructure and Project Finance Boot Camp**, Lagos Business School, 14 to 22 October 2026.
 
 | File | What it is |
 |---|---|

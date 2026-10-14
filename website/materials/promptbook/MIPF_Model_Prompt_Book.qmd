@@ -4,7 +4,7 @@ subtitle: "Everything that builds the TrainStat financial model: prompts, specif
 author: "Prof Bongo Adi, Lagos Business School"
 date: last-modified
 date-format: "D MMMM YYYY"
-description: "Mastering Infrastructure and Project Finance Boot Camp, 14 to 21 October 2026. Reproduces the complete corrected model (start model and project-finance extension) with copy-ready prompts for five build paths (plus a reading path for lenders and lawyers), independent verification and the options that change the answer."
+description: "Mastering Infrastructure and Project Finance Boot Camp, 14 to 22 October 2026. Reproduces the complete corrected model (start model and project-finance extension) with copy-ready prompts for five build paths (plus a reading path for lenders and lawyers), independent verification and the options that change the answer."
 format:
   html:
     from: markdown-tex_math_dollars
@@ -199,23 +199,23 @@ What a good Path A conversation looks like for block B05 (OpCost). The tutor exp
 
 | Block | Day | Sheet(s) | Delivers | Checkpoint |
 |---|---|---|---|---|
-| [B00](#sec-b00) | Day 4 (Sat 17 Oct) | structure | Blank sheets Cover, Dashboard, InpC, InpS, Time, Esc, OpRev, OpCost, Tax, NCA, Debt, Equity, FinStat, Val, Tra | Twenty sheets in the stated order; no sheet hidden |
+| [B00](#sec-b00) | Day 4 (Mon 19 Oct) | structure | Blank sheets Cover, Dashboard, InpC, InpS, Time, Esc, OpRev, OpCost, Tax, NCA, Debt, Equity, FinStat, Val, Tra | Twenty sheets in the stated order; no sheet hidden |
 | [B01](#sec-b01) | Day 4 | InpC, InpS | Column F of InpC (active constants); rows of InpS used by OpRev, OpCost and Debt | Switching F3 between the three names changes F35 (fare) to 7.15, 6.435 and 7.865 |
 | [B02](#sec-b02) | Day 4 | Time | Rows 25 (period end), 30 (days), 37 (financial year), 45 (acquisition flag), 69 (forecast flag), 75 (last fore | Time!H45 = 1 (one acquisition column) |
 | [B03](#sec-b03) | Day 4 | Esc | Row 32 handling escalation factor; row 38 O&M escalation factor; CPI index row | Esc row 32 at the first forecast quarter (L) = 1.2261 |
 | [B04](#sec-b04) | Day 4 | OpRev | Row 42 operating revenue (IS); row 54 revenue received (CF); row 65 receivables (BS) | OpRev!H42 total revenue = 1,941,569 (Base) |
 | [B05](#sec-b05) | Day 4 | OpCost | Row 39 operating cost (IS); row 51 cost paid (CF); row 62 payables (BS) | OpCost!H16 = 890,187; H23 = 157,312; H31 = 104,874 (Base) |
 | [B06](#sec-b06) | Day 4 | Tax | Row 32 tax paid (CF); row 38 tax expense (IS); row 49 deferred tax (BS) | Tax!H11 = 108,000; H27 = 662,904; H31 = 198,871; H37 = 198,871 (start model, Base) |
-| [B07](#sec-b07) | Day 5 (Mon 19 Oct) | NCA | Row 54 accounting depreciation (IS); row 64 non-current asset balance (BS); row 19 capital expenditure (CF) | NCA!H53 = 108,000 (opening 100,000 + capex 8,000) in the start model |
+| [B07](#sec-b07) | Day 5 (Tue 20 Oct) | NCA | Row 54 accounting depreciation (IS); row 64 non-current asset balance (BS); row 19 capital expenditure (CF) | NCA!H53 = 108,000 (opening 100,000 + capex 8,000) in the start model |
 | [B08](#sec-b08) | Day 5 | Debt | Row 21 principal POS; row 32 interest POS; row 44 debt balance (BS) | Debt!H21 = 60,000 and Debt!H32 = 18,291 (profile 1, Base) |
 | [B09](#sec-b09) | Day 5 | Equity | Row 24 share capital (BS); row 50 retained cash (BS); row 61 retained earnings (BS); row 39 dividends | Equity!H39 = 464,033 (start model, Base) |
 | [B10](#sec-b10) | Day 5 | FinStat | EBITDA (row 11), profit after tax (18), CFADS (38), cash flow available for dividends (45), total assets (61), | FinStat!F74 = 0, F77 = 0, F80 = 0 |
 | [B11](#sec-b11) | Day 5 | Val | NPV (F39), XIRR (F49) | Val!F39 NPV = 17,609.0 and F49 XIRR = 33.72% (start model, Base) |
 | [B12](#sec-b12) | Day 5 | Track | Live results (H8:H69), stored runs (M:O), differences (K, L), changed-row flags (J) | Track!H8 (NPV) equals Val!F39 for the active scenario |
 | [B13](#sec-b13) | Day 5 | structure | A sensitivity table of NPV, IRR and EBITDA; a one-way and a two-way data table; DSCR by quarter | Fare -10%: NPV -5,113.6 and IRR 22.93% |
-| [B14](#sec-b14) | Day 6 (Tue 20 Oct) | Constr | Capitalised project cost F52, senior debt at COD F53, sponsor funding F54 | Solved Base: uses 101,067.8; debt 72,154.2; equity 28,913.6; IDC 4,155.3; commitment fee 619.4; upfront fee 1, |
+| [B14](#sec-b14) | Day 6 (Wed 21 Oct) | Constr | Capitalised project cost F52, senior debt at COD F53, sponsor funding F54 | Solved Base: uses 101,067.8; debt 72,154.2; equity 28,913.6; IDC 4,155.3; commitment fee 619.4; upfront fee 1, |
 | [B15](#sec-b15) | Day 6 | structure | InpC!J64:L64 = Constr!$F$52; Debt!F11 = Constr!$F$53; Equity!F16 = Constr!$F$54 (later SHL!$F$14) | Teaching inputs: asset base 100,022.9; debt 60,013.8; share capital 40,009.2 |
-| [B16](#sec-b16) | Day 7 (Wed 21 Oct) | Sculpt | Debt capacity F26, debt limit F28, debt size F29, sculpted DSCR F31, Goal Seek gap F32, repayment profile row  | Base: capacity 72,154.2; gearing limit 75,800.8; debt size 72,154.2; binding constraint DSCR; gearing 71.39% |
+| [B16](#sec-b16) | Day 7 (Thu 22 Oct) | Sculpt | Debt capacity F26, debt limit F28, debt size F29, sculpted DSCR F31, Goal Seek gap F32, repayment profile row  | Base: capacity 72,154.2; gearing limit 75,800.8; debt size 72,154.2; binding constraint DSCR; gearing 71.39% |
 | [B17](#sec-b17) | Day 7 | structure | Debt row 17 inserted ('Senior debt profile 4 - sculpted' = Sculpt!J40); INDEX switch extended to 4 | Debt balance END reaches 0 in December 2031 |
 | [B18](#sec-b18) | Day 7 | DSRA | DSRA funding/release (row 17, to FinStat row 44), balance (row 18, to the balance sheet) | Base: maximum DSRA 6,530; zero again after December 2031 |
 | [B19](#sec-b19) | Day 7 | SHL | SHL balance, interest (tax-deductible), principal; Val blended sponsor cash flows; Equity opening share capita | Base: SHL initial 17,348.1; interest paid 18,391; principal repaid 17,782; balance zero in 2032 |
@@ -233,7 +233,7 @@ Each block follows the same eleven-part pattern: purpose, concept, inputs, build
 ## B00 Workbook standards and skeleton {#sec-b00}
 
 ::: {.block-meta}
-**Day** 4 (Sat 17 Oct) · **Sheet(s)** workbook structure · **Depends on** Nothing · **Produces** Blank sheets Cover, Dashboard, InpC, InpS, Time, Esc, OpRev, OpCost, Tax, NCA, Debt, Equity, FinStat, Val, Track (PF adds Constr, Sculpt, DSRA, SHL, Ratios) · **Suggested time (Path A)** 20 minutes
+**Day** 4 (Mon 19 Oct) · **Sheet(s)** workbook structure · **Depends on** Nothing · **Produces** Blank sheets Cover, Dashboard, InpC, InpS, Time, Esc, OpRev, OpCost, Tax, NCA, Debt, Equity, FinStat, Val, Track (PF adds Constr, Sculpt, DSRA, SHL, Ratios) · **Suggested time (Path A)** 20 minutes
 
 **By the end you can** set up a workbook that any reviewer can navigate and check by pattern.
 :::
@@ -4186,7 +4186,7 @@ A table: Row | Test number | Finding | Severity (blocker, major, minor) | Exact 
 ## B07 NCA: capex, depreciation and the asset balance {#sec-b07}
 
 ::: {.block-meta}
-**Day** 5 (Mon 19 Oct) · **Sheet(s)** NCA · **Depends on** B01, B02 · **Produces** Row 54 accounting depreciation (IS); row 64 non-current asset balance (BS); row 19 capital expenditure (CF) · **Suggested time (Path A)** 50 minutes
+**Day** 5 (Tue 20 Oct) · **Sheet(s)** NCA · **Depends on** B01, B02 · **Produces** Row 54 accounting depreciation (IS); row 64 non-current asset balance (BS); row 19 capital expenditure (CF) · **Suggested time (Path A)** 50 minutes
 
 **By the end you can** depreciate opening assets and new capex and roll the asset balance.
 :::
@@ -7855,7 +7855,7 @@ A table: Row | Test number | Finding | Severity (blocker, major, minor) | Exact 
 ## B14 Constr: construction timeline, uses and sources, IDC {#sec-b14}
 
 ::: {.block-meta}
-**Day** 6 (Tue 20 Oct) · **Sheet(s)** Constr · **Depends on** B01 · **Produces** Capitalised project cost F52, senior debt at COD F53, sponsor funding F54 · **Suggested time (Path A)** 90 minutes
+**Day** 6 (Wed 21 Oct) · **Sheet(s)** Constr · **Depends on** B01 · **Produces** Capitalised project cost F52, senior debt at COD F53, sponsor funding F54 · **Suggested time (Path A)** 90 minutes
 
 **By the end you can** build uses and sources with IDC and fees and prove sources equal uses.
 :::
@@ -8755,7 +8755,7 @@ A table: Row | Test number | Finding | Severity (blocker, major, minor) | Exact 
 ## B16 Sculpt: debt capacity, sizing and sculpted repayments {#sec-b16}
 
 ::: {.block-meta}
-**Day** 7 (Wed 21 Oct) · **Sheet(s)** Sculpt · **Depends on** B02 to B07, B14 · **Produces** Debt capacity F26, debt limit F28, debt size F29, sculpted DSCR F31, Goal Seek gap F32, repayment profile row 40 (becomes Debt profile 4) · **Suggested time (Path A)** 90 minutes
+**Day** 7 (Thu 22 Oct) · **Sheet(s)** Sculpt · **Depends on** B02 to B07, B14 · **Produces** Debt capacity F26, debt limit F28, debt size F29, sculpted DSCR F31, Goal Seek gap F32, repayment profile row 40 (becomes Debt profile 4) · **Suggested time (Path A)** 90 minutes
 
 **By the end you can** size debt by backward recursion, sculpt the repayments and solve the gearing.
 :::

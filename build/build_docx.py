@@ -46,7 +46,7 @@ def pic(path,w,al="c"):
 
 # footer / header
 fp=sec.footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER
-run(fp,"Lagos Business School  |  MIPF Boot Camp  |  14–21 October 2026  |  Prof Bongo Adi  +234 706 164 8699  |  badi@lbs.edu.ng  |  bongo.adi@fulbrightmail.org",sz=8,c=SLATE)
+run(fp,"Lagos Business School  |  MIPF Boot Camp  |  14–22 October 2026  |  Prof Bongo Adi  +234 706 164 8699  |  badi@lbs.edu.ng  |  bongo.adi@fulbrightmail.org",sz=8,c=SLATE)
 hp=sec.header.paragraphs[0]; hp.alignment=WD_ALIGN_PARAGRAPH.RIGHT
 hp.add_run().add_picture(M+"mipf_hex_256.png",height=Cm(1.0)); hp.add_run("  "); hp.add_run().add_picture(M+"bongo_ai_hex_256.png",height=Cm(1.0)); hp.add_run("  "); hp.add_run().add_picture(M+"lbs-logo.png",height=Cm(1.1))
 
@@ -65,7 +65,7 @@ for i,im in enumerate(["image1.png","image2.png","image3.png"]):
     c.paragraphs[0].add_run().add_picture(M+im,width=Inches(1.85))
 para(after=30)
 p=para("Course information and syllabus",b=True,sz=20,c=NAVY,al="c",after=4); rule(p)
-para("Open-enrolment programme  |  Seven teaching days, Wednesday 14th to Wednesday 21st October 2026 (Sunday 18th is a rest day)",i=True,sz=11,c=SLATE,al="c")
+para("Open-enrolment programme  |  Seven teaching days: Wednesday 14th to Friday 16th and Monday 19th to Thursday 22nd October 2026 (Saturday 17th and Sunday 18th are rest days)",i=True,sz=11,c=SLATE,al="c")
 pagebreak()
 
 # ------------------------------------------------ narrative (2024/2025 order)

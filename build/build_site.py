@@ -99,13 +99,13 @@ NAV=[("index.html","Programme"),("day1.html","Timetable"),("slides.html","Slides
 def page(fn,title,body,cur=None,desc=""):
     nav="".join(f'<a href="{h}"{" aria-current=page" if (cur==h) else ""}>{t}</a>' for h,t in NAV)
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{E(title)} · MIPF October 2026</title><meta name="description" content="{E(desc or 'Mastering Infrastructure and Project Finance Boot Camp, Lagos Business School, 14–21 October 2026')}">
+<title>{E(title)} · MIPF October 2026</title><meta name="description" content="{E(desc or 'Mastering Infrastructure and Project Finance Boot Camp, Lagos Business School, 14–22 October 2026')}">
 <link rel="icon" href="assets/logo/mipf_hex.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="assets/logo/bongo_ai_hex_256.png"><link rel="stylesheet" href="assets/css/mipf.css"></head><body>
 <header class="site"><div class="wrap"><a class="brand" href="index.html"><span class="lbs"><img src="assets/logo/lbs-logo.png" alt="Lagos Business School, Pan-Atlantic University"></span>
 <img class="hex" src="assets/logo/mipf_hex_256.png" alt="MIPF hex"><img class="hex" src="assets/logo/bongo_ai_hex_dark_256.png" alt="bongo.ai hex"><span>Mastering Infrastructure &amp; Project Finance<small>Boot Camp · October 2026</small></span></a><nav class="main" aria-label="Main">{nav}<a href="{REPO}" target="_blank" rel="noopener" aria-label="GitHub repository" title="GitHub repository" style="display:flex;align-items:center">{GH_SVG}</a></nav></div></header>
 {body}
 <footer class="site"><div class="wrap"><span class="lbs"><img src="assets/logo/lbs-logo.png" alt="Lagos Business School"></span><img class="fhex" src="assets/logo/mipf_hex_256.png" alt="MIPF"><img class="fhex" src="assets/logo/bongo_ai_hex_dark_256.png" alt="bongo.ai">
-<div>Lagos Business School, Pan-Atlantic University · Ajah, Lagos<br><a href="{REPO}/blob/main/course-materials/website/{fn}.html" target="_blank" rel="noopener">View source</a> · <a href="{REPO}/issues/new" target="_blank" rel="noopener">Report an issue</a> · <a href="{REPO}" target="_blank" rel="noopener">GitHub repository</a><br>Mastering Infrastructure and Project Finance Boot Camp · 14–21 October 2026 · Prof Bongo Adi · <a href="tel:+2347061648699">+234 706 164 8699</a> · <a href="mailto:badi@lbs.edu.ng">badi@lbs.edu.ng</a> · <a href="mailto:bongo.adi@fulbrightmail.org">bongo.adi@fulbrightmail.org</a></div></div></footer></body></html>'''
+<div>Lagos Business School, Pan-Atlantic University · Ajah, Lagos<br><a href="{REPO}/blob/main/website/{fn}.html" target="_blank" rel="noopener">View source</a> · <a href="{REPO}/issues/new" target="_blank" rel="noopener">Report an issue</a> · <a href="{REPO}" target="_blank" rel="noopener">GitHub repository</a><br>Mastering Infrastructure and Project Finance Boot Camp · 14–22 October 2026 · Prof Bongo Adi · <a href="tel:+2347061648699">+234 706 164 8699</a> · <a href="mailto:badi@lbs.edu.ng">badi@lbs.edu.ng</a> · <a href="mailto:bongo.adi@fulbrightmail.org">bongo.adi@fulbrightmail.org</a></div></div></footer></body></html>'''
 def write(fn,s): open(os.path.join(OUT,fn),"w",encoding="utf8").write(s)
 open(OUT+"/assets/css/mipf.css","w").write(CSS)
 
@@ -125,13 +125,13 @@ def rlist(keys):
 cards=[]
 for dy in DAYS:
     cards.append(f'<a class="card" href="day{dy["n"]}.html"><div class="top">{hexsvg(str(dy["n"]),"DAY")}<div><div class="d">{E(dy["short"].upper())}</div><h3>{E(dy["mtitle"])}</h3></div></div><p>{E(dy["fac"])}</p></a>')
-    if dy["n"]==4: cards.append('<div class="rest"><div><b>Sunday 18 October</b><br>Rest day: no sessions</div></div>')
+    if dy["n"]==3: cards.append('<div class="rest"><div><b>Saturday 17 and Sunday 18 October</b><br>Rest days: no sessions</div></div>')
 mods="".join(f'<div class="card"><h3>{E(h)}</h3><p>{E(t)}</p></div>' for h,t in MODULES)
 body=f'''<section class="hero"><div class="wrap"><div class="row"><div class="stamp">{hexsvg("MIPF")}</div><div class="stamp"><img src="assets/logo/bongo_ai_hex_dark.png" alt="bongo.ai" style="width:150px;height:150px"></div><div>
 <div class="kicker">Open enrolment · Lagos Business School</div><h1>Mastering Infrastructure and Project Finance Boot Camp</h1>
 <p>Structure, negotiate and model limited-recourse infrastructure financings. Seven teaching days, four modules and one running Excel model, led by Lagos Business School faculty and project-finance practitioners.</p>
 <a class="btn" href="day1.html">See the timetable</a><a class="btn ghost" href="info.html">Practical information</a></div></div>
-<div class="hero-sub"><div class="stat"><b>14–21 October 2026</b><span>Wednesday to Wednesday (rest day Sunday 18th)</span></div><div class="stat"><b>{E(VENUE)}</b><span>{E(PLACE)}</span></div><div class="stat"><b>7 teaching days</b><span>Cases, legal, finance and hands-on modelling</span></div></div></div></section>
+<div class="hero-sub"><div class="stat"><b>14–22 October 2026</b><span>Wednesday to Thursday (rest days Saturday 17th and Sunday 18th)</span></div><div class="stat"><b>{E(VENUE)}</b><span>{E(PLACE)}</span></div><div class="stat"><b>7 teaching days</b><span>Cases, legal, finance and hands-on modelling</span></div></div></div></section>
 <main><div class="wrap"><h2 class="sec">The week at a glance</h2><div class="grid">{"".join(cards)}</div>
 <h2 class="sec">Four modules</h2><div class="grid">{mods}</div>
 <h2 class="sec">Who it is for</h2><p>{E(PROFILE)}</p>
@@ -176,7 +176,7 @@ for k,dk in DECKS.items():
     ses=[(d_,i_,a,b,w) for (d_,i_),lst in SESSION_DECKS.items() for (kk,a,b,w) in lst if kk==k]
     li="".join(f'<li><a href="day{d_}.html">Day {d_}, session {i_}</a>: slides {a} to {b} ({E(w)})</li>' for d_,i_,a,b,w in sorted(ses))
     rows+=f'<div class="card" style="margin-bottom:14px"><h3>{E(dk["t"])}</h3><p>{dk["n"]} slides · <a href="{dk["f"]}" download>Download .pptx</a></p><ul>{li}</ul></div>'
-body=f'<section class="hero" style="padding:28px 0"><div class="wrap"><div class="kicker">Slides</div><h1 style="font-size:2rem">Tutorial decks, session by session</h1><p>Each deck is attached to its day and to the sessions it supports, with the slide range. Open the files in PowerPoint, Keynote or Google Slides. These are the participants' editions: exercise answers and speaker notes are withheld and are reviewed together in class.</p></div></section><main><div class="wrap">{rows}</div></main>'
+body=f'<section class="hero" style="padding:28px 0"><div class="wrap"><div class="kicker">Slides</div><h1 style="font-size:2rem">Tutorial decks, session by session</h1><p>Each deck is attached to its day and to the sessions it supports, with the slide range. Open the files in PowerPoint, Keynote or Google Slides. These are the participants’ editions: exercise answers and speaker notes are withheld and are reviewed together in class.</p></div></section><main><div class="wrap">{rows}</div></main>'
 write("slides.html",page("slides","Slides",body,"slides.html"))
 
 # ---------------------------------------------------------------- readings
@@ -223,7 +223,7 @@ write("faculty.html",page("faculty","Faculty",body,"faculty.html"))
 # ---------------------------------------------------------------- info
 body=f'''<section class="hero" style="padding:28px 0"><div class="wrap"><div class="kicker">Practical information</div><h1 style="font-size:2rem">Before you come</h1></div></section>
 <main><div class="wrap"><h2 class="sec">When and where</h2><table><tbody>
-<tr><td class="m">Dates</td><td>Wednesday 14th to Wednesday 21st October 2026, including Saturday 17th. Sunday 18th is a rest day.</td></tr>
+<tr><td class="m">Dates</td><td>Wednesday 14th to Friday 16th and Monday 19th to Thursday 22nd October 2026. Saturday 17th and Sunday 18th are rest days.</td></tr>
 <tr><td class="m">Venue</td><td>{E(VENUE)}, {E(PLACE)}</td></tr>
 <tr><td class="m">Format</td><td>Open enrolment. Lectures, case discussion, group sessions and hands-on Excel modelling.</td></tr>
 <tr><td class="m">Daily rhythm</td><td>Start 09:00. A coffee break mid-morning and lunch from 14:00 to 14:45. Finish 16:30 on Days 1–2 and 17:00 on Days 3–7 (see each day page).</td></tr></tbody></table>

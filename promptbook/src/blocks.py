@@ -34,7 +34,7 @@ PATHS = [
 # ---------------------------------------------------------------------------------------------------------------- blocks
 # atlas: "start" (Days 4-5 workbook) or "pf" (final workbook). rows: optional list of (lo, hi) ranges to restrict the spec.
 BLOCKS = [
- dict(id="B00", title="Workbook standards and skeleton", day="Day 4 (Sat 17 Oct)", sheet=None, atlas=None,
+ dict(id="B00", title="Workbook standards and skeleton", day="Day 4 (Mon 19 Oct)", sheet=None, atlas=None,
   purpose="Create an empty, correctly wired workbook before any calculation: sheet order, layout columns, colour code, named ranges, calculation settings. Everything later depends on this skeleton.",
   depends="Nothing", produces="Blank sheets Cover, Dashboard, InpC, InpS, Time, Esc, OpRev, OpCost, Tax, NCA, Debt, Equity, FinStat, Val, Track (PF adds Constr, Sculpt, DSRA, SHL, Ratios)",
   inputs=[],
@@ -160,7 +160,7 @@ BLOCKS = [
   pitfalls=[("Deferred tax does not return to zero", "Row 26 interest not linked", "Link Tax row 26 to Debt interest (and SHL interest in the PF model)"),
             ("Negative tax paid", "Taxable income negative in early years", "The workbook refunds losses in cash (a teaching simplification); add a loss roll-forward to carry them forward")]),
 
- dict(id="B07", title="NCA: capex, depreciation and the asset balance", day="Day 5 (Mon 19 Oct)", sheet=["NCA"], atlas="start",
+ dict(id="B07", title="NCA: capex, depreciation and the asset balance", day="Day 5 (Tue 20 Oct)", sheet=["NCA"], atlas="start",
   purpose="Hold the capex table, depreciate the opening assets straight line over 15 years, depreciate new capex as a pool over its 5-year life, and roll the asset balance.",
   depends="B01, B02", produces="Row 54 accounting depreciation (IS); row 64 non-current asset balance (BS); row 19 capital expenditure (CF)",
   inputs=["nca0", "life", "lifeCapex"],
@@ -269,7 +269,7 @@ BLOCKS = [
   pitfalls=[("Data table shows the same value everywhere", "Input cell is on another sheet", "Put the table on the sheet of the input cell"),
             ("Workbook very slow", "Data table recalculates 84 columns x cells", "Switch to 'Automatic except for data tables'")]),
 
- dict(id="B14", title="Constr: construction timeline, uses and sources, IDC", day="Day 6 (Tue 20 Oct)", sheet=["Constr"], atlas="pf",
+ dict(id="B14", title="Constr: construction timeline, uses and sources, IDC", day="Day 6 (Wed 21 Oct)", sheet=["Constr"], atlas="pf",
   purpose="Model the 8 quarters before COD: hard cost spend, upfront fee, commitment fee and interest during construction (IDC); fund the uses with debt and equity; prove sources = uses.",
   depends="B01", produces="Capitalised project cost F52, senior debt at COD F53, sponsor funding F54",
   inputs=["constrN", "hard", "upfront", "commit", "rate", "dc", "facility", "drawdown", "eqCommit"],
@@ -301,7 +301,7 @@ BLOCKS = [
   pitfalls=[("Balance sheet breaks at COD", "Debt or equity re-pointed but not both", "All three edits are needed"),
             ("Depreciation changed", "Higher capitalised cost raises annual depreciation (6,667 a year on 100,000 becomes 6,668 on the teaching 100,023 and 6,738 on the solved 101,068)", "Expected; explain in the change log")]),
 
- dict(id="B16", title="Sculpt: debt capacity, sizing and sculpted repayments", day="Day 7 (Wed 21 Oct)", sheet=["Sculpt"], atlas="pf",
+ dict(id="B16", title="Sculpt: debt capacity, sizing and sculpted repayments", day="Day 7 (Thu 22 Oct)", sheet=["Sculpt"], atlas="pf",
   purpose="Find how much the project can borrow (capacity at the target DSCR over the tenor), size the debt as the lower of the cash-flow test and the gearing cap, and shape repayments so cover is constant.",
   depends="B02 to B07, B14", produces="Debt capacity F26, debt limit F28, debt size F29, sculpted DSCR F31, Goal Seek gap F32, repayment profile row 40 (becomes Debt profile 4)",
   inputs=["tenor", "dscr", "gmax", "rate", "dc"],
