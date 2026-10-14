@@ -19,6 +19,10 @@ This repository is the public home of the participants' course materials. The re
 | `promptbook/` | **Model Prompt Book** (QMD and rendered HTML): everything that builds the model, with prompts for five build paths, checkpoints, options and failure modes; and the **MIPF Model Builder** (interactive HTML app). See `promptbook/README.md` | Everyone |
 | `build/` | Python scripts that generate the syllabus, website and decks from one content file (`mipf_data.py`) and the models | Maintainers |
 
+## Day 1 (CIBN-derived) materials
+
+The Day 1 deck, participant workbook, pre-read primer and the Sahel Sun capital-stack template were adapted from the CIBN workshop and are rebranded for MIPF: CIBN references replaced, LBS logo, MIPF hex and bongo.ai hex added, contact block in every file, speaker notes removed from the deck. The template's formulas are unchanged; results were checked in Microsoft Excel (debt 37.40, minimum DSCR 1.35x, LLCR 1.35x, sponsor IRR 10.25%). The adaptation scripts are `src/rebrand_sahel_template.py` and `src/rebrand_day1_docs.py`.
+
 ## Models
 
 * `TrainStat_StartModel.xlsx`: the supplied start model, **corrected and completed**. Corrections: about 1.2 million ghost cells out to column XFD removed (file 6.0 MB to 0.4 MB), tax now deducts interest (deferred tax and retained earnings end at zero), check totals extended from column BY to the full timeline CO, empty Track sheet built with stored Base/Downside/Upside runs, broken names and external links repaired, scenarios made coherent, unused O&M sensitivity linked, placeholder rows wired to inputs, DSCR block, Cover and Dashboard added. Full list on the Cover sheet.
