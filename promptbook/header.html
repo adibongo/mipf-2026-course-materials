@@ -1,0 +1,20 @@
+<div class="mipf-hero">
+  <img src="assets/lbs-logo.png" alt="Lagos Business School">
+  <div class="t"><b>Mastering Infrastructure and Project Finance Boot Camp</b><span>Model Prompt Book &middot; 14 to 21 October 2026 &middot; Prof Bongo Adi &middot; +234 706 164 8699 &middot; badi@lbs.edu.ng &middot; bongo.adi@fulbrightmail.org</span></div>
+  <img class="hex" src="assets/mipf_hex_256.png" alt="MIPF"><img class="hex" src="assets/bongo_ai_hex_256.png" alt="bongo.ai">
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("div.prompt").forEach(function (d, i) {
+    var pre = d.querySelector("pre"); if (!pre) return;
+    var b = document.createElement("button"); b.type = "button"; b.className = "copy-prompt"; b.textContent = "Copy prompt";
+    b.setAttribute("aria-label", "Copy this prompt to the clipboard");
+    b.addEventListener("click", function () {
+      var t = pre.innerText; var done = function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy prompt"; }, 1400); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, function () { fallback(t, done); }); else fallback(t, done);
+    });
+    d.insertBefore(b, d.firstChild);
+  });
+  function fallback(t, done) { var a = document.createElement("textarea"); a.value = t; document.body.appendChild(a); a.select(); try { document.execCommand("copy"); } catch (e) {} a.remove(); done(); }
+});
+</script>

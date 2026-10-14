@@ -1,0 +1,38 @@
+/*-- scss:defaults --*/
+$primary: #141B4D;
+$secondary: #0B5E82;
+$info: #1C7293;
+$warning: #D99A2B;
+$body-color: #1d2433;
+$link-color: #0B5E82;
+$font-family-sans-serif: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: "SF Mono", Menlo, Consolas, monospace;
+$headings-color: #141B4D;
+$code-bg: #f3f6f9;
+/*-- scss:rules --*/
+h1, h2 { font-family: Georgia, "Times New Roman", serif; }
+h1 { border-bottom: 3px solid #D99A2B; padding-bottom: .25em; margin-top: 2.2rem; }
+h2 { border-bottom: 1px solid #d9e1ea; padding-bottom: .15em; margin-top: 2rem; }
+.mipf-hero { background: #141B4D; color: #fff; padding: 18px 26px; display: flex; align-items: center; gap: 22px; flex-wrap: wrap; border-bottom: 4px solid #D99A2B; }
+.mipf-hero img { height: 54px; background: #fff; border-radius: 6px; padding: 4px 8px; }
+.mipf-hero img.hex { background: transparent; padding: 0; height: 58px; }
+.mipf-hero .t { flex: 1 1 360px; }
+.mipf-hero .t b { font-family: Georgia, serif; font-size: 1.35rem; display: block; }
+.mipf-hero .t span { color: #F0C06A; font-size: .92rem; }
+.block-meta { background: #eef5f9; border-left: 4px solid #0B5E82; padding: .55rem .9rem; margin: .6rem 0 1rem; font-size: .93rem; }
+div.prompt pre, pre.prompt { border-left: 4px solid #D99A2B; background: #fbf8f1; font-size: .78rem; max-height: 520px; overflow: auto; white-space: pre-wrap; word-break: break-word; }
+div.prompt pre code { white-space: pre-wrap; word-break: break-word; }
+.warnlist { margin: .4rem 0 0 1.1rem; color: #b3261e; font-size: .85rem; }
+table { font-size: .86rem; }
+thead th { background: #141B4D; color: #fff; }
+.nav-tabs .nav-link.active { border-top: 3px solid #D99A2B; font-weight: 600; }
+.mipf-foot { margin: 3rem 0 1rem; padding: 14px 22px; background: #f3f6f9; border-top: 3px solid #D99A2B; font-size: .85rem; display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.mipf-foot img { height: 40px; }
+
+button.copy-prompt { float: right; margin: 4px 4px -30px 0; position: relative; z-index: 2; background: #0B5E82; color: #fff; border: 0; border-radius: 5px; padding: 3px 10px; font-size: .78rem; cursor: pointer; }
+button.copy-prompt:hover { background: #141B4D; }
+div.prompt { margin-bottom: 1rem; }
+#quarto-document-content table, table.table { display: block !important; max-width: 100% !important; overflow-x: auto !important; }
+body, #quarto-content, #quarto-document-content { overflow-x: hidden; }
+#quarto-document-content pre { max-width: 100%; }
+.block-meta { overflow-wrap: anywhere; }

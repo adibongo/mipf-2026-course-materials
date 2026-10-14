@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<path d="M 512,166.66 L 212.92,339.33 L 212.92,684.67 L 512,857.34 L 811.08,684.67 L 811.08,339.33 Z" fill="#FFFFFF"/>
+<path d="M 512,25.6 L 90.77,268.8 L 212.92,339.33 L 512,166.66 Z" fill="#141B4D"/>
+<path d="M 90.77,268.8 L 90.77,755.2 L 212.92,684.67 L 212.92,339.33 Z" fill="#141B4D"/>
+<path d="M 90.77,755.2 L 512,998.4 L 512,857.34 L 212.92,684.67 Z" fill="#141B4D"/>
+<path d="M 512,998.4 L 933.23,755.2 L 811.08,684.67 L 512,857.34 Z" fill="#141B4D"/>
+<path d="M 933.23,755.2 L 933.23,268.8 L 811.08,339.33 L 811.08,684.67 Z" fill="#141B4D"/>
+<path d="M 933.23,268.8 L 512,25.6 L 512,166.66 L 811.08,339.33 Z" fill="#141B4D"/>
+<path d="M 512,25.6 L 90.77,268.8 L 90.77,755.2 L 512,998.4 L 933.23,755.2 L 933.23,268.8 Z" fill="none" stroke="#141B4D" stroke-width="3" stroke-linejoin="round"/>
+<path d="M 512,166.66 L 212.92,339.33 L 212.92,684.67 L 512,857.34 L 811.08,684.67 L 811.08,339.33 Z" fill="none" stroke="#141B4D" stroke-width="3" stroke-linejoin="round"/>
+<text x="512" y="578" text-anchor="middle" fill="#141B4D" font-family="Lato, Inter, Helvetica, Arial, sans-serif" font-weight="800" font-size="196" letter-spacing="-6">MIPF</text></svg>
