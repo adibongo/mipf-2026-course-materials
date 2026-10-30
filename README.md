@@ -1,6 +1,6 @@
 # MIPF October 2026: course materials
 
-Mastering Infrastructure and Project Finance Boot Camp, Lagos Business School, Pan-Atlantic University, 14 to 22 October 2026 (Saturday 17th and Sunday 18th are rest days). Open enrolment.
+Mastering Infrastructure and Project Finance Boot Camp, Lagos Business School, Pan-Atlantic University, 2 to 10 November 2026 (Saturday 7th and Sunday 8th are rest days). Open enrolment.
 
 Course director: **Prof Bongo Adi** · +234 706 164 8699 · badi@lbs.edu.ng · bongo.adi@fulbrightmail.org
 

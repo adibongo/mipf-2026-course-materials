@@ -5,7 +5,7 @@ TITLE = "Mastering Infrastructure and Project Finance Boot Camp"
 SHORT = "MIPF"
 VENUE = "Lagos Business School, Pan-Atlantic University"
 PLACE = "Ajah, Lagos"
-DATES_LONG = "14th – 22nd October 2026"
+DATES_LONG = "2nd – 10th November 2026"
 
 ADI = "Prof Bongo Adi"
 MC = "Michelle Chikezie, LLB, LLM"
@@ -70,7 +70,7 @@ def B(start, end, title):
 
 DAYS = [
 # =============================================================== DAY 1
-dict(n=1, date="Wednesday 14th October 2026", short="Wed 14 Oct", module=1,
+dict(n=1, date="Monday 2nd November 2026", short="Mon 2 Nov", module=1,
  mtitle="The Infrastructure Challenge and Raison d'être of Project Finance",
  fac=ADI,
  blurb=("Day 1 follows one deal from structuring to credit committee: Project Sahel Sun, a 50 MW solar plant in Kano State. "
@@ -106,7 +106,7 @@ dict(n=1, date="Wednesday 14th October 2026", short="Wed 14 Oct", module=1,
     read=["workbook","termsheet"], alt=["bp","ajc"]),
  ]),
 # =============================================================== DAY 2
-dict(n=2, date="Thursday 15th October 2026", short="Thu 15 Oct", module=2,
+dict(n=2, date="Tuesday 3rd November 2026", short="Tue 3 Nov", module=2,
  mtitle="Legal Fundamentals of Project and Infrastructure Finance",
  fac=MC,
  blurb=("Legal due diligence, security, negotiation and the allocation of risk in contract: the documents that make a project bankable, "
@@ -139,7 +139,7 @@ dict(n=2, date="Thursday 15th October 2026", short="Thu 15 Oct", module=2,
     read=["w_pppguide","yes"]),
  ]),
 # =============================================================== DAY 3
-dict(n=3, date="Friday 16th October 2026", short="Fri 16 Oct", module=3,
+dict(n=3, date="Wednesday 4th November 2026", short="Wed 4 Nov", module=3,
  mtitle="Finance Fundamentals of Project and Infrastructure Finance",
  fac=PG,
  blurb=("From project contracts to bankability, capital structure, term loans and syndication; risk allocation viewed through the lender's model; "
@@ -167,11 +167,11 @@ dict(n=3, date="Friday 16th October 2026", short="Fri 16 Oct", module=3,
     sheets=["InpC","InpS","Time","Track"], read=["trainstat","w_fast"]),
  ]),
 # =============================================================== DAY 4
-dict(n=4, date="Monday 19th October 2026", short="Mon 19 Oct", module=4,
+dict(n=4, date="Thursday 5th November 2026", short="Thu 5 Nov", module=4,
  mtitle="Financial Modelling for Projects I: The Operating Model",
  fac=PG,
  blurb=("Hands-on in Excel with the TrainStat start model: a 20-year, quarterly model of an international and domestic train service. "
-        "Today: orientation, the financial statements, revenue, operating cost and tax. (Day 4 follows the weekend rest: Saturday 17th and Sunday 18th October are rest days.)"),
+        "Today: orientation, the financial statements, revenue, operating cost and tax."),
  sessions=[
   S("09.00","10.00","Introduction to Financial Modelling for Projects; Understanding the Start Model; Review of the Case Study", mode="Lecture and Exercise", fac=PG,
     desc="Modelling standards (inputs, workings, outputs, checks; one formula per row); the start model's structure and timeline; the TrainStat case.",
@@ -189,11 +189,11 @@ dict(n=4, date="Monday 19th October 2026", short="Mon 19 Oct", module=4,
     sheets=["OpCost","Tax","FinStat"], read=["trainstat","bodmer"]),
  ]),
 # =============================================================== DAY 5
-dict(n=5, date="Tuesday 20th October 2026", short="Tue 20 Oct", module=4,
+dict(n=5, date="Friday 6th November 2026", short="Fri 6 Nov", module=4,
  mtitle="Financial Modelling for Projects II: Balance Sheet, Funding and Valuation",
  fac=PG,
  blurb=("Completing the three-statement start model: non-current assets, working capital, equity and debt; then scenarios, sensitivities, ratios and valuation, "
-        "closing with a model review against the guide."),
+        "closing with a model review against the guide. (Saturday 7th and Sunday 8th November are rest days; Day 6 resumes on Monday 9th November.)"),
  sessions=[
   S("09.00","10.00","Modelling Non-Current Assets and Working Capital", mode="Lecture and Exercise", fac=PG,
     desc="Opening non-current asset balance and useful life; capex by date and its depreciation; the NCA balance roll-forward; receivables and payables as working capital.",
@@ -211,7 +211,7 @@ dict(n=5, date="Tuesday 20th October 2026", short="Tue 20 Oct", module=4,
     sheets=["Val","FinStat","Track","InpC"], read=["trainstat","pignataro","w_fast","exercises"]),
  ]),
 # =============================================================== DAY 6
-dict(n=6, date="Wednesday 21st October 2026", short="Wed 21 Oct", module=4,
+dict(n=6, date="Monday 9th November 2026", short="Mon 9 Nov", module=4,
  mtitle="Project and Infrastructure Finance Modelling I: Construction and Funding",
  fac=PG,
  blurb=("We convert the operating start model into a project-finance model by adding a construction period, a funding plan and the cost of "
@@ -233,7 +233,7 @@ dict(n=6, date="Wednesday 21st October 2026", short="Wed 21 Oct", module=4,
     sheets=["Debt","FinStat","Time"], read=["trainstat","bodmer","yes"]),
  ]),
 # =============================================================== DAY 7
-dict(n=7, date="Thursday 22nd October 2026", short="Thu 22 Oct", module=4,
+dict(n=7, date="Tuesday 10th November 2026", short="Tue 10 Nov", module=4,
  mtitle="Project and Infrastructure Finance Modelling II: Debt Sizing and Returns",
  fac=PG,
  blurb=("Drawdown, cover ratios, sculpting and sizing, reserve accounts and shareholder returns: the numbers a credit committee decides on."),
@@ -264,7 +264,7 @@ OBJECTIVE = ("The objective of this course is to equip participants with the ski
 OVERVIEW = [
  "Project Finance is a highly technical and complex field that has evolved with PPPs, especially as a limited-recourse facility.  Project companies provide a particularly powerful laboratory in which to study the determinants and implications of various structural attributes because they are, as newly created companies, less influenced by the vagaries of history (Esty, 2002).  Moreover, the size of the investments (75% of projects cost more than $100 million) and the time it takes to structure them (one to five years) ensures that managers have the opportunity and the economic incentive to make careful, value-enhancing structural decisions.  As a rapidly developing field of practice in connection with the rolling out of PPPs in Nigeria, a grave need has been established to update the skills of investment professionals and financial analysts involved in infrastructure projects across the country.",
  "Delivered by internationally certified and recognised experts in LBS and the PPP domain of practice, this boot camp is designed to assist participants in fully understanding the practical techniques, skills, and spreadsheet models needed to analyse, structure, negotiate, and ultimately complete successful project-backed financings. By presenting effective financial model design techniques and analysing case studies of project financing models, participants in this program will learn how to design and structure project financing models, review and critique project financing models, as well as how to negotiate and structure infrastructure project financing.",
- "This boot camp is delivered in 4 modules over seven teaching days (Wednesday 14th to Friday 16th and Monday 19th to Thursday 22nd October 2026, with Saturday 17th and Sunday 18th October as rest days). Below is an overview of the areas covered in the 4 modules.",
+ "This boot camp is delivered in 4 modules over seven teaching days (Monday 2nd to Friday 6th and Monday 9th to Tuesday 10th November 2026, with Saturday 7th and Sunday 8th November as rest days). Below is an overview of the areas covered in the 4 modules.",
 ]
 MODULES_INTRO = [
  "This Project Finance Bootcamp is designed to provide participants with a comprehensive understanding of project finance modelling in an infrastructure project context.  It encompasses the key principles, practices, and strategies in procurement, contracting, deal structuring, financing, debt sculpting, legal framework, risk management, and demonstration of skills learned in modelling practice.  Most of these are driven by real-life case studies and a single running Excel model.",
@@ -328,7 +328,7 @@ MODEL = dict(
          ("Temp","Scratch","Working area")],
 )
 
-SCHEDULE_NOTE = ("Timings follow the 2026 curriculum. Saturday 17th and Sunday 18th October are rest days. "
+SCHEDULE_NOTE = ("Timings follow the 2026 curriculum. Saturday 7th and Sunday 8th November are rest days. "
                  "Coffee and lunch breaks are shown in the timetable.")
 
 # ---------------------------------------------------------------- tutorial decks attached to sessions

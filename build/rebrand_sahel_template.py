@@ -14,12 +14,12 @@ for col, f, h in (("A", "lbs-logo.png", 48), ("B", "mipf_hex_256.png", 48), ("C"
     im = Image(f"{LOGOS}/{f}"); r = h / im.height; im.height = h; im.width = int(im.width * r)
     ws.add_image(im, f"{col}1")
 ws["A4"] = "Project Sahel Sun — 50MW Solar IPP: Capital Stack & Debt Sizing Template"
-ws["A6"] = "MIPF Boot Camp, Day 1 — Infrastructure Finance: Structuring, Risk Management & Sustainable Project Delivery (14 October 2026)"
+ws["A6"] = "MIPF Boot Camp, Day 1 — Infrastructure Finance: Structuring, Risk Management & Sustainable Project Delivery (2 November 2026)"
 ws["A7"] = "Facilitator: Prof. Bongo Adi, Lagos Business School, Pan-Atlantic University"
 ws["A8"] = None
 # contact block under the existing text (last text row after the shift is 20)
 last = ws.max_row + 2
-ws.cell(last, 1, "Mastering Infrastructure and Project Finance (MIPF) Boot Camp  |  Lagos Business School  |  14 to 22 October 2026").font = Font(bold=True, color=NAVY)
+ws.cell(last, 1, "Mastering Infrastructure and Project Finance (MIPF) Boot Camp  |  Lagos Business School  |  2 to 10 November 2026").font = Font(bold=True, color=NAVY)
 ws.cell(last + 1, 1, CONTACT).font = Font(color=TEAL)
 ws.cell(last + 2, 1, "Teaching case; all figures illustrative.").font = Font(italic=True, color="5C6B7A")
 for s in wb:
