@@ -43,7 +43,7 @@ for p in glob.glob(os.path.join(ROOT, "website", "*.html")):
     if t != s:
         stats["pages"] += 1
         if not DRY: open(p, "w", encoding="utf-8").write(t)
-d = os.path.join(ROOT, "MIPF_October_2026_Course_Syllabus.docx")
+d = os.path.join(ROOT, "MIPF_November_2026_Course_Syllabus.docx")
 zin = zipfile.ZipFile(d); tmp = d + ".tmp"
 with zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as zo:
     for it in zin.infolist():

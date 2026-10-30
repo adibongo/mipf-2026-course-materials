@@ -173,4 +173,4 @@ for kind,ttl in (("hosted","Provided on the course website"),("pack","Course pac
         if r["kind"]==kind:
             q=para(after=1); run(q,"•  "+r["t"],sz=10.5); run(q,"  – "+r["s"],i=True,sz=10,c=SLATE)
             if kind=="web": run(q,"  "+r["u"],sz=9.5,c=BLUE)
-out=OUT+"/MIPF_October_2026_Course_Syllabus.docx"; d.save(out); print("saved",out)
+out=OUT+"/MIPF_November_2026_Course_Syllabus.docx"; d.save(out); print("saved",out)

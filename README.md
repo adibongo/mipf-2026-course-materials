@@ -1,4 +1,4 @@
-# MIPF October 2026: course materials
+# MIPF November 2026: course materials (second run)
 
 Mastering Infrastructure and Project Finance Boot Camp, Lagos Business School, Pan-Atlantic University, 2 to 10 November 2026 (Saturday 7th and Sunday 8th are rest days). Open enrolment.
 
@@ -12,7 +12,7 @@ This repository is the public home of the participants' course materials. The re
 
 | Folder / file | What it is | Audience |
 |---|---|---|
-| `syllabus/MIPF_October_2026_Course_Syllabus.docx` | Course syllabus in the 2024/2025 format, merged with the 2026 curriculum | Participants |
+| `syllabus/MIPF_November_2026_Course_Syllabus.docx` | Course syllabus in the 2024/2025 format, merged with the 2026 curriculum | Participants |
 | `website/` | Static participant website (open `index.html`): timetable, day pages, readings, model guide, faculty, practical information | Participants |
 | `decks/` | Eight **participants' edition** tutorial decks (543 slides): Excel foundations, Day 1 companion, Days 2 to 7. Exercises are intact; answer callouts, answer slides, answer keys and speaker notes are withheld and reviewed in class. The 101-slide Day 1 deck is in `website/materials/`, also without speaker notes. | Participants |
 | `models/` | Excel models: the corrected start model (Days 4 to 5), the complete project finance model (Days 6 to 7), and the original supplied file | Facilitators; start model also on the website |

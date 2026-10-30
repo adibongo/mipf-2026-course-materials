@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Single source of truth for MIPF October 2026 (syllabus .docx + website)."""
+"""Single source of truth for MIPF November 2026 (syllabus .docx + website)."""
 
 TITLE = "Mastering Infrastructure and Project Finance Boot Camp"
 SHORT = "MIPF"
