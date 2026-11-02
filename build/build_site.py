@@ -211,7 +211,7 @@ body=f'''<section class="hero" style="padding:28px 0"><div class="wrap"><div cla
 write("model.html",page("model","TrainStat model",body,"model.html"))
 
 # ---------------------------------------------------------------- faculty
-ph={"Prof. Bongo Adi":"assets/img/adi.png","Promise Godbold":"assets/img/godbold.jpg"}
+ph={"Prof. Bongo Adi":"assets/img/adi.png","Promise Godbold":"assets/img/godbold.jpg","Okechukwu Okoro":"assets/img/okoro.jpg"}
 fc=""
 for f in FACULTY:
     im=f'<img src="{ph[f["name"]]}" alt="{E(f["name"])}">' if f["name"] in ph else '<div class="ph">'+"".join(w[0] for w in f["name"].replace(",", " ").split()[:2]).upper()+'</div>'
