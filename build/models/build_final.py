@@ -326,7 +326,7 @@ def add_cover_dashboard(wb, kind, changes, scen_note):
     if kind == "pf": steps.append("5. After changing price, cost, tenor or DSCR inputs: Goal Seek Sculpt!F32 to 0 by changing the active scenario's gearing cell on InpC row 72 (J72 Base, K72 Downside, L72 Upside); then set the facility on InpC row 131 to ROUNDUP(Sculpt!F29, 0) for that scenario and repeat both until stable (the facility drives the fees, which drive the project cost).")
     for i, s in enumerate(steps): cv[f"B{rr+1+i}"].value = s; cv.merge_cells(f"B{rr+1+i}:G{rr+1+i}")
     rr += len(steps) + 2
-    cv[f"B{rr}"].value = "CHANGE LOG (v1.0, 8 October 2026)"; cv[f"B{rr}"].font = Font(bold=True, color=BLUE)
+    cv[f"B{rr}"].value = "CHANGE LOG (v1.0)"; cv[f"B{rr}"].font = Font(bold=True, color=BLUE)
     for i, ch in enumerate(changes):
         cv[f"B{rr+1+i}"].value = f"{i+1}. {ch}"; cv.merge_cells(f"B{rr+1+i}:G{rr+1+i}")
         cv[f"B{rr+1+i}"].alignment = Alignment(wrap_text=True, vertical="top"); cv.row_dimensions[rr + 1 + i].height = 45

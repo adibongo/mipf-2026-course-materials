@@ -103,7 +103,7 @@ para(SCHEDULE_NOTE,i=True,sz=9.5,c=SLATE,before=6)
 # faculty
 pagebreak()
 head("Faculty")
-photos={"Prof. Bongo Adi":"image4.png","Promise Godbold":"image5.jpeg","Michelle Chikezie, LLB, LLM":"chikezie.jpg"}
+photos={"Prof. Bongo Adi":"image4.png","Promise Godbold":"image5.jpeg"}
 for f in FACULTY:
     para(f["name"]+" – "+f["role"],b=True,sz=12.5,c=NAVY,before=10,after=4,keep=True)
     if f["name"] in photos: pic(M+photos[f["name"]],1.25,"l")

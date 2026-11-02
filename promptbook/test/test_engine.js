@@ -1,4 +1,4 @@
-// Node test: engine vs reference values read from the delivered workbooks (formula evaluation of every scenario, confirmed in Microsoft Excel on 10 Oct 2026).
+// Node test: engine vs reference values read from the delivered workbooks (formula evaluation of every scenario, confirmed in Microsoft Excel).
 const fs = require("fs"), path = require("path");
 const E = require("../src/engine.js");
 const inputs = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/inputs.json"), "utf8"));

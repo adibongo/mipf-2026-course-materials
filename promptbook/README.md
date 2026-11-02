@@ -27,7 +27,7 @@ bash run_tests.sh
 
 ## Verification
 
-1. Workbooks: the final build (day-count correction, facility rule, automatic calculation) was recalculated in Microsoft Excel for Mac on 10 October 2026 for Base, Downside and Upside: values equal the engine to 6 decimals, Cover reads ALL CHECKS PASSED, zero error cells; it was also verified by a full formula evaluation of every cell.
+1. Workbooks: the final build (day-count correction, facility rule, automatic calculation) was recalculated in Microsoft Excel for Mac for Base, Downside and Upside: values equal the engine to 6 decimals, Cover reads ALL CHECKS PASSED, zero error cells; it was also verified by a full formula evaluation of every cell.
 2. Python replica: agrees with Excel to 6 decimals.
 3. This JavaScript engine: reproduces the same reference values (`node test/test_engine.js`; the same list runs on the app's Verify tab) and satisfies the integrity checks for 2,160 option combinations (`node test/test_options.js`).
 

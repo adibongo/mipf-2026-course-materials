@@ -31,7 +31,7 @@ The Day 1 deck, participant workbook, pre-read primer and the Sahel Sun capital-
 
 ## Verification
 
-Both models were recalculated in **Microsoft Excel for Mac on 10 October 2026** for all three scenarios (Base, Downside, Upside): every check is zero, Cover reads ALL CHECKS PASSED, no cell returns an error. They also agree to about 9 significant figures with a full formula evaluation and with an independent Python/JavaScript replica.
+Both models were recalculated in **Microsoft Excel for Mac** for all three scenarios (Base, Downside, Upside): every check is zero, Cover reads ALL CHECKS PASSED, no cell returns an error. They also agree to about 9 significant figures with a full formula evaluation and with an independent Python/JavaScript replica.
 
 Base case (start model): shareholder NPV 17,609 and XIRR 33.72%. Base case (project finance model): debt sized 72,154 at a 2.25x target DSCR (71.4% gearing), minimum DSCR 2.30x, blended sponsor IRR 43.03% measured from COD (34.71% when each construction-period contribution is dated when it is paid; see the retained conventions in the Prompt Book).
 

@@ -211,10 +211,10 @@ body=f'''<section class="hero" style="padding:28px 0"><div class="wrap"><div cla
 write("model.html",page("model","TrainStat model",body,"model.html"))
 
 # ---------------------------------------------------------------- faculty
-ph={"Prof. Bongo Adi":"assets/img/adi.png","Promise Godbold":"assets/img/godbold.jpg","Michelle Chikezie, LLB, LLM":"assets/img/chikezie.jpg"}
+ph={"Prof. Bongo Adi":"assets/img/adi.png","Promise Godbold":"assets/img/godbold.jpg"}
 fc=""
 for f in FACULTY:
-    im=f'<img src="{ph[f["name"]]}" alt="{E(f["name"])}">' if f["name"] in ph else '<div class="ph">MC</div>'
+    im=f'<img src="{ph[f["name"]]}" alt="{E(f["name"])}">' if f["name"] in ph else '<div class="ph">'+"".join(w[0] for w in f["name"].replace(",", " ").split()[:2]).upper()+'</div>'
     bio=f["bio"] if f["name"]!="Prof. Bongo Adi" else f["bio"][:1]+f["bio"][2:]
     fc+=f'<article class="person">{im}<h3>{E(f["name"])}</h3><div class="meta">{E(f["role"])}</div>'+"".join(f'<p>{E(t)}</p>' for t in bio[:3])+"</article>"
 body=f'<section class="hero" style="padding:28px 0"><div class="wrap"><div class="kicker">Faculty</div><h1 style="font-size:2rem">Who teaches the boot camp</h1></div></section><main><div class="wrap"><div class="faculty">{fc}</div></div></main>'
