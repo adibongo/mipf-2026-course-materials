@@ -226,7 +226,7 @@ body=f'''<section class="hero" style="padding:28px 0"><div class="wrap"><div cla
 <tr><td class="m">Dates</td><td>Monday 2nd to Friday 6th and Monday 9th to Tuesday 10th November 2026. Saturday 7th and Sunday 8th are rest days.</td></tr>
 <tr><td class="m">Venue</td><td>{E(VENUE)}, {E(PLACE)}</td></tr>
 <tr><td class="m">Format</td><td>Open enrolment. Lectures, case discussion, group sessions and hands-on Excel modelling.</td></tr>
-<tr><td class="m">Daily rhythm</td><td>Start 09:00. A coffee break mid-morning and lunch from 14:00 to 14:45. Finish 16:30 on Days 1–2 and 17:00 on Days 3–7 (see each day page).</td></tr></tbody></table>
+<tr><td class="m">Daily rhythm</td><td>Start 09:00 (Day 1 opens at 08:30 for registration and housekeeping). Five 75-minute sessions each day, a 45-minute coffee break from 10:15 to 11:00 and lunch from 13:30 to 14:30. Finish 17:00 (see each day page).</td></tr></tbody></table>
 <h2 class="sec">What to bring</h2><ul><li>A laptop with desktop Excel (Windows or Mac) and the <a href="materials/{R["trainstat"]["f"]}" download>TrainStat start model</a>, from Day 3.</li><li>The Day 1 <a href="materials/{R["primer"]["f"]}" download>pre-read primer</a>, read in advance.</li></ul>
 <h2 class="sec">Contact</h2><p><b>Prof Bongo Adi</b>, Course Director, Lagos Business School<br>Phone / WhatsApp: <a href="tel:+2347061648699">+234 706 164 8699</a><br>Email: <a href="mailto:badi@lbs.edu.ng">badi@lbs.edu.ng</a><br>Fulbright email: <a href="mailto:bongo.adi@fulbrightmail.org">bongo.adi@fulbrightmail.org</a></p></div></main>'''
 write("info.html",page("info","Practical information",body,"info.html"))

@@ -112,7 +112,7 @@ for f in FACULTY:
 # ------------------------------------------------ schedule
 def ampm(s,e):
     h=int(e.split(".")[0]); return "pm" if (h>=12 or h<=7) else "am"
-def trange(s,e): return f"{s} – {e} {ampm(s,e)}"
+def trange(s,e): return f"{s} – {e}"   # 24-hour clock
 def label(keys,pref):
     out=[]
     for k in keys:
